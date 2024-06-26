@@ -30,7 +30,7 @@ This is a Hospital Management System web application designed to streamline and 
 1. **Clone the Repository:**
     ```bash
     git clone https://github.com/codekarimi/PHP_PROJECT.git
-    cd hospital-management-system
+    cd hospital_management_system
     ```
 
 2. **Set Up XAMPP:**
