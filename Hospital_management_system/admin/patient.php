@@ -32,7 +32,7 @@ session_start();
                 </div>
 
                 <div class="col-md-10">
-                    <h5 class="text-center font-weight-bold">Total Patients</h5>
+                    <h5 class="text-center font-weight-bold my-3">Total Patients</h5>
                     <?php
                     $query = "SELECT * FROM patient ORDER BY date_reg ASC ";
 
@@ -52,6 +52,7 @@ session_start();
             <th>Phone</th>
             <th>Country</th>
             <th>Date Registered</th>
+            <th>Action</th>
         
 
         </tr>
@@ -62,7 +63,7 @@ session_start();
                         $output .= '
     
      <tr>
-            <td colspan="10" class="text-center"> No Job Request yet.</td>
+            <td colspan="10" class="text-center"> No Patients yet.</td>
         </tr>
 
 
@@ -81,6 +82,9 @@ session_start();
             <td>' . $row["phone"] . '</td>
             <td>' . $row["country"] . '</td>
             <td>' . $row["date_reg"] . '</td>
+            <td>
+             <a href="http://localhost:8080/Hospital%20management%20system/admin/view.php?id=' . $row['id'] . '"><button class="btn btn-info">View</button></a>
+            </td>
            
        
     ';
